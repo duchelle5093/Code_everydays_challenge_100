@@ -17,7 +17,25 @@ section{
     align-items: center;
     justify-content: space-around;
 }
-.card.active{
+.card{
+    display: flex;
+    align-items: flex-end;
+}
+.card span{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin:30px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.card.active span{
+    opacity: 1;
+}
+.card1.activ{
+    width: 10%;
+}
+.card.active {
     width:70%;
     margin: 0 15px;
 }
@@ -62,22 +80,3 @@ section{
     background: url(./Images/woman-6047776.jpg) center/cover;
 }
 
-
- /*
-.card1:hover{
-    width: 10%;
-}
-.card2:hover{
-    width: 50%;
-}
-.card3:hover{
-    width: 50%;
-}
-.card4:hover{
-    width: 50%;
-}
-.card5:hover{
-    width: 50%;
-}
-
-*/

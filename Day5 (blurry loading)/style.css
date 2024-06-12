@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.nbre{
+    position: absolute;
+    right: 45%;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+span{
+    letter-spacing: 5px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: url(./Images/view-3d-school-girl-nature.jpg) center/cover;
+    filter: blur(30px);
+    transition: 0.5s ease;
+
+}
+.container.active{
+    animation: blur 2s ease;
+}
+@keyframes blur{
+    from{
+        filter: blur(30px);
+    }
+    5%{
+        filter: blur(25px);
+    }
+    10%{
+        filter: blur(20px);
+    }
+    15%{
+        filter: blur(15px);
+    }
+    30%{
+        filter: blur(10px);
+    }
+    60%{
+        filter: blur(8px);
+    }
+    80%{
+        filter: blur(5px);
+    }
+    90%{
+        filter: blur(3px);
+    }
+    95%{
+        filter: blur(1.5px);
+    }
+    to{
+        filter: blur(0px);
+    }
+}
+.stop-blur{
+    filter: blur(0px);
+}
+

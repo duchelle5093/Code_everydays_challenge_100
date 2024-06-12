@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.container{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    /* transform-origin: 0 0;
+    transform: rotate(-18deg); */
+}
+.rotate{
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+}
+
+p{
+    line-height: 40px;
+}
+.all{
+    width: 1500px;
+    background-color:aliceblue;
+    padding: 150px 20px;
+}
+.all .top h1{
+    font-size: 3.5rem;
+}
+.all .top p{
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+.all .top i{
+    font-size: 1.2rem;
+}
+.all .middle p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 50px 0 10px 0;
+}
+.all .bottom p{
+    font-size: 1.5rem;
+    margin: 50px 0;
+}
+/**************navbar***************************/
+
+.navbar{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.8s ease-in-out;
+    transform: translateX(-200px);
+}
+.nav{
+    background-color:hsl(209, 67%, 86%);
+    height: 160px;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.nav button{
+    padding: 20px 25px;
+    border: none;
+    background-color :rgba(239, 99, 33,0);
+    cursor: pointer;
+    border-radius: 15px;
+}
+.nav button i{
+    font-size: 40px;
+    color: white;
+}
+.closed{
+    display: none;
+}
+.inf p{
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+.inf i{
+    font-size: 1.5rem;
+    color: white;
+}
+.infos .inf{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+   
+}
+.home{
+    margin-left: 30px;
+}
+.about{
+    margin-left: 50px;
+}
+.contact{
+    margin-left: 70px;
+}
+.show{
+    transform: translateX(0);
+}
